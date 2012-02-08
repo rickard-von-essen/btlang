@@ -1,26 +1,32 @@
 Ruby
 ====
  - [Ruby](http://www.ruby-lang.org/)
- - Version: _ruby 1.8.7_
+ - Version: _1.9.3p0_
 
-Day 1
+Day 1 ![Check](../img/check.png)
 ====
 
 Find:
 -----
- - The Ruby API
- - The free online version of _Programming Ruby: The Pragmatic Programmer's Guide_
+ - The Ruby API:
+  - Core [online](http://www.ruby-doc.org/core-1.9.3/) [local](file:///home/rickard/doc/ruby_1_9_2_core/index.html)
+  - Std-lib [online](http://www.ruby-doc.org/stdlib-1.9.3/) [local](file:///home/rickard/doc/ruby_1_9_2_stdlib/index.html) 
+ - The free online version of [_Programming Ruby: The Pragmatic Programmer's Guide_](http://ruby-doc.org/docs/ProgrammingRuby/)
  - A method that substitutes part of a string
- - Information about Ruby's regular expressions
- - Information about Ruby's ranges
+  - `#gsub(regex, replacemnet)`
+ - Information about Ruby's regular expressions ![Check](../img/check.png)
+ - Information about Ruby's ranges ![Check](../img/check.png)
  
 Do:
 ---
 
- - Print the string "Hello world."
- - For the string "Hello Ruby" find the index of the word _Ruby_. 
- - Print your name 10 times
- - Run a Ruby program from a file
+ - Print the string "Hello world." ![Check](../img/check.png)
+ - For the string "Hello Ruby" find the index of the word _Ruby_. ![Check](../img/check.png) 
+ - Print your name 10 times ![Check](../img/check.png)
+ - Run a Ruby program from a file 
+  - `ruby <file.rb>`
+ 
+See **day1/day1.rb**
  
 Day 2
 ====
