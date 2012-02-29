@@ -34,15 +34,35 @@ Day 2
 Find: 
 ----
  - Find out how to access files with and with out code blocks. What is the benefit with a code block?
+ <pre><code>
+  f = File.open("file.txt")
+  ...
+  f.close
+ </code></pre>
+ Or
+ <pre><code>
+  File.open("file.txt") { ... }
+ </code></pre> 
  - How would you translate a hash to an array? Can you translate arrays to hashes?
+  - `#to_a -> array`
+  - No
  - Can you iterate through a hash?
+  - `#each*`
  - You can use Ruby arrays as stacks. What other common data structures do arrays support?
+  - Array, stack, list.
  
 Do:
 ---
- - Print the content of an array of sixteen numbers, four numbers at a time, using _each_. Now do the same with _each___slice_ in _Enumerable_.
- - The _Tree_ class was interesting but did not allow you to specify a new tree with a clean user interface. Let the initializer accept a nested structure with hashes and arrays. You should be able to specify a tree like  this: _{'grandpa' => {'dad' => {'child 1' => }, 'child 2' => {}}, 'uncle' => { 'child3' => {}, 'child 4' => {}}}_.
+ - Print the content of an array of sixteen numbers, four numbers at a time, using _each_. Now do the same with _each___slice_ in _Enumerable_. ![Check](../img/check.png)
+ - The _Tree_ class was interesting but did not allow you to specify a new tree with a clean user interface. Let the initializer accept a nested structure with hashes and arrays. You should be able to specify a tree like  this: _{'grandpa' => {'dad' => {'child 1' => }, 'child 2' => {}}, 'uncle' => { 'child3' => {}, 'child 4' => {}}}_. ![Check](../img/check.png)
  - Write a simple grep that print the lines of a file having any occurrences of a phrase anywhere in the line. You will need to do a simple regular expression match and read lines from a file. (This is surprisingly simple in Ruby.) If you want, include line numbers.
+![Check](../img/check.png)
+
+See: 
+
+ - **day2/day2.rb**
+ - **day2/Tree-ext.rb**
+ - **day2/grep.rb**
 
 Day 3
 ====
