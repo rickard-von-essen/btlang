@@ -70,13 +70,20 @@ Day 3
 Do:
 --
  - Modify the CSV application to support an _each_ method to return a _CsvRow_ object. Use _method___missing_ on CsvRow to return the value for the column for a given heading. For example the file:
- 
-_one, two
-lions, tigers_
-  
+
+<pre>
+one     two
+lions   tigers
+</pre>  
 Allow an API that works like this:
 
-      csv = RubyCsv.new
+      csv = Csv.new
       csv.each {|row| puts row.one}
   
-This shoul print _lions_.
+This should print _lions_.
+
+See: 
+
+ - **day3/cvs.rb**
+ - **day3/cvs_test.rb**
+ 
